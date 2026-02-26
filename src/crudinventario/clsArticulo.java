@@ -26,6 +26,9 @@ public class clsArticulo {
     }
     
     public void guardar(){
+        mArticulo article = new mArticulo();
+        article.insertar(this.aTexto());
+        
         System.out.println(this.aTexto());
     }
 }
