@@ -1,3 +1,4 @@
-1234|hola|34.0
-1234|hola|34.0
-5678|Esta horrible|5.0
+1234|hola|23.0
+1234|hola|23.0
+1234|hola|23.0
+455|rolladora|20.0

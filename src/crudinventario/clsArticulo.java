@@ -4,6 +4,9 @@
  */
 package crudinventario;
 
+import java.util.ArrayList;
+import javax.swing.DefaultListModel;
+
 /**
  *
  * @author FAMILIA
@@ -20,6 +23,10 @@ public class clsArticulo {
         this.precio = precio;
     }
     
+    public clsArticulo(){
+        
+    }
+    
     public String aTexto(){
         String articulo = this.codigo + "|" + this.descripcion + "|" + this.precio;
         return articulo;
@@ -30,5 +37,18 @@ public class clsArticulo {
         article.insertar(this.aTexto());
         
         System.out.println(this.aTexto());
+    }
+    
+    public DefaultListModel<String> llenarLista(){
+        mArticulo mArticle = new mArticulo();
+        ArrayList<String> datos = mArticle.consultar();
+        
+        DefaultListModel<String> modelLista = new DefaultListModel<>();
+        
+        for (String registro: datos){
+            modelLista.addElement(registro);
+        }
+        
+        return modelLista;
     }
 }
