@@ -51,4 +51,16 @@ public class clsArticulo {
         
         return modelLista;
     }
+    
+    public void actualizar(String newCodigo, String newDescripcion, String newPrecio){
+        
+        String nuevaLinea = newCodigo + "|" + newDescripcion + "|" + newPrecio;
+        String lineaOriginal = this.codigo + "|" + this.descripcion + "|" + this.precio;
+        
+        System.out.println("Nuevos valores:" + nuevaLinea);
+        System.out.println("Valores Originales:" + lineaOriginal);
+        
+        mArticulo mArticle = new mArticulo();
+        mArticle.update(lineaOriginal, nuevaLinea, "listado_articulos.txt");
+    }
 }

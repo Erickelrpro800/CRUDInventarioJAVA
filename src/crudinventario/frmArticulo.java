@@ -18,6 +18,8 @@ public class frmArticulo extends javax.swing.JFrame {
     public frmArticulo() {
         initComponents();
     }
+    
+    clsArticulo updateArticulo;
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -89,7 +91,7 @@ public class frmArticulo extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(145, 145, 145)
                 .addComponent(btnGuardar)
-                .addContainerGap(168, Short.MAX_VALUE))
+                .addContainerGap(177, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -215,12 +217,11 @@ public class frmArticulo extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(9, 9, 9)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -250,16 +251,21 @@ public class frmArticulo extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBuscarActionPerformed
 
     private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
-        // TODO add your handling code here:
+        updateArticulo.actualizar(txtCodigo1.getText(), txtDescripcion1.getText(), txtPrecio1.getText());
     }//GEN-LAST:event_btnActualizarActionPerformed
 
     private void lstArticuloValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstArticuloValueChanged
         if(!evt.getValueIsAdjusting()){
             String registroSeleccionado = lstArticulo.getSelectedValue();
             String[] datos = registroSeleccionado.split("\\|");
-            txtCodigo1.setText(datos[0].replace("Codigo: ", ""));
-            txtDescripcion1.setText(datos[1].replace("Descripcion: ", ""));
-            txtPrecio1.setText(datos[2].replace("Precio: ", ""));
+            String codigo = datos[0].replace("Codigo:", "");
+            String descripcion = datos[1].replace("Descripcion: ", "");
+            String precio = datos[2].replace("Precio: ", "");
+            txtCodigo1.setText(codigo);
+            txtDescripcion1.setText(descripcion);
+            txtPrecio1.setText(precio);
+            
+            updateArticulo = new clsArticulo(codigo,descripcion,Double.parseDouble(precio));
         }
     }//GEN-LAST:event_lstArticuloValueChanged
 
