@@ -32,6 +32,10 @@ public class clsArticulo {
         return articulo;
     }
     
+    public String getDescripcion(){
+        return this.descripcion;
+    }
+    
     public void guardar(){
         mArticulo article = new mArticulo();
         article.insertar(this.aTexto());
@@ -62,5 +66,15 @@ public class clsArticulo {
         
         mArticulo mArticle = new mArticulo();
         mArticle.update(lineaOriginal, nuevaLinea, "listado_articulos.txt");
+    }
+    
+    public void eliminar(){
+        
+        String lineaOriginal = this.codigo + "|" + this.descripcion + "|" + this.precio;
+        
+        System.out.println("Valores Originales:" + lineaOriginal);
+        
+        mArticulo mArticle = new mArticulo();
+        mArticle.delete(lineaOriginal,"listado_articulos.txt");
     }
 }

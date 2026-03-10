@@ -1,5 +1,2 @@
-1234|hola|23.0
-1234|hola|23.0
-1234|hola|23.0
-455|rolladora|20.0
 69|Posicion|0.0
+89|chris se la come|30.0
