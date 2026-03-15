@@ -1,2 +1,3 @@
-69|Posicion|0.0
-89|chris se la come|30.0
+69|Posicion|69.0
+67|Mal chiste|67.0100|cien|100.0
+100|cien|100.0

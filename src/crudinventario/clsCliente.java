@@ -13,16 +13,16 @@ import javax.swing.DefaultListModel;
  */
 public class clsCliente {
     
-    private Double numero_cliente;
+    private String numero;
     private String nombre;
-    private String tipo_cliente;
-    private String razon_social;
+    private String tipo;
+    private String razon;
     
-    public clsCliente(Double numero_cliente, String nombre, String tipo_cliente, String razon_social){
-        this.numero_cliente = numero_cliente;
+    public clsCliente(String numero, String nombre, String tipo, String razon){
+        this.numero = numero;
         this.nombre = nombre;
-        this.tipo_cliente = tipo_cliente;
-        this.razon_social = razon_social;
+        this.tipo = tipo;
+        this.razon = razon;
     }
     
     public clsCliente(){
@@ -30,8 +30,12 @@ public class clsCliente {
     }
     
     public String aTexto(){
-        String cliente = this.numero_cliente + "|" + this.nombre + "|" + this.tipo_cliente + "|" + this.razon_social;
+        String cliente = this.numero + "|" + this.nombre + "|" + this.tipo + "|" + this.razon;
         return cliente;
+    }
+    
+    public String getNombre(){
+        return this.nombre;
     }
     
     public void guardar(){
@@ -52,6 +56,26 @@ public class clsCliente {
         }
         
         return modelLista;
+    }
+    
+    public void actualizar(String newNumero, String newNombre, String newTipo, String newRazon){
+        String nuevaLinea = newNumero + "|" + newNombre + "|" + newTipo + "|" + newRazon;
+        String lineaOriginal = this.numero + "|" + this.nombre + "|" + this.tipo + "|" + this.razon;
+        
+        System.out.println("Nuevo valores" + nuevaLinea);
+        System.out.println("Valores Originales" + lineaOriginal);
+        
+        mCliente mClient = new mCliente ();
+        mClient.update(lineaOriginal, nuevaLinea, "listado_clientes.txt");
+    }
+    
+    public void eliminar(){
+        String lineaOriginal = this.numero + "|" + this.nombre + "|" + this.tipo + "|" + this.razon;
+        
+        System.out.println("Valores Originales" + lineaOriginal);
+        
+        mCliente mClient = new mCliente();
+        mClient.delete(lineaOriginal,"listado_clientes.txt");
     }
 }
     
