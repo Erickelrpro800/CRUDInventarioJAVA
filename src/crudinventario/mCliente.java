@@ -68,8 +68,8 @@ public class mCliente {
         String lineaLeida;
         Boolean actualizado = false;
         
-        try(BufferedReader br = new BufferedReader(new FileReader(fileOriginal));
-                BufferedWriter bw = new BufferedWriter(new FileWriter(fileTemporal)); ){
+        try(BufferedReader br = new BufferedReader(new FileReader (fileOriginal));
+                BufferedWriter bw = new BufferedWriter(new FileWriter (fileTemporal)); ){
                            
                 while((lineaLeida = br.readLine()) != null){
                     if(lineaLeida.equals(lineaActual)){
@@ -89,7 +89,7 @@ public class mCliente {
                 System.out.println("Registro Actualizado");
                 
             } else {
-            System.out.println("Error : No se pudo borrar el archivo");
+                System.out.println("Error : No se pudo borrar el archivo");
             }
         } else{
             fileTemporal.delete();
@@ -103,10 +103,10 @@ public class mCliente {
         java.io.File fileTemporal = new java.io.File("temporal.txt");
         
         String lineaLeida;
-            Boolean eliminado = false;
+        Boolean eliminado = false;
         
-        try(BufferedReader br = new BufferedReader(new FileReader(fileOriginal));
-                BufferedWriter bw = new BufferedWriter(new FileWriter(fileTemporal)); ){
+        try(BufferedReader br = new BufferedReader(new FileReader (fileOriginal));
+                BufferedWriter bw = new BufferedWriter(new FileWriter (fileTemporal)); ){
                            
                 while((lineaLeida = br.readLine()) != null){
                     if(lineaLeida.equals(lineaActual)){

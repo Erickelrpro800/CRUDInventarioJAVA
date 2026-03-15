@@ -59,24 +59,24 @@ public class clsCliente {
     }
     
     public void actualizar(String newNumero, String newNombre, String newTipo, String newRazon){
+        
         String nuevaLinea = newNumero + "|" + newNombre + "|" + newTipo + "|" + newRazon;
         String lineaOriginal = this.numero + "|" + this.nombre + "|" + this.tipo + "|" + this.razon;
         
-        System.out.println("Nuevo valores" + nuevaLinea);
-        System.out.println("Valores Originales" + lineaOriginal);
+        System.out.println("Nuevo valores:" + nuevaLinea);
+        System.out.println("Valores Originales:" + lineaOriginal);
         
-        mCliente mClient = new mCliente ();
+        mCliente mClient = new mCliente();
         mClient.update(lineaOriginal, nuevaLinea, "listado_clientes.txt");
     }
     
     public void eliminar(){
+        
         String lineaOriginal = this.numero + "|" + this.nombre + "|" + this.tipo + "|" + this.razon;
         
-        System.out.println("Valores Originales" + lineaOriginal);
+        System.out.println("Valores Originales:" + lineaOriginal);
         
         mCliente mClient = new mCliente();
         mClient.delete(lineaOriginal,"listado_clientes.txt");
     }
 }
-    
-

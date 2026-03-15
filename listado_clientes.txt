@@ -2,3 +2,4 @@
 2|Gustavo|menso|retraso
 3|Chris|Ñoquis|compañero
 4|sobas|Pendejo|molestia
+5|Felipe|de sangre|deprimido
