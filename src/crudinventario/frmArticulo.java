@@ -337,7 +337,7 @@ public class frmArticulo extends javax.swing.JFrame {
             String[] datos = registroSeleccionado.split("\\|");
             String codigo = datos[0].replace("Codigo: ", "");
             String descripcion = datos[1].replace(" Descripcion: ", "");
-            String precio = datos[2].replace("Precio: ", "");
+            String precio = datos[2].replace(" Precio: ", "");
             txtCodigo1.setText(codigo);
             txtDescripcion1.setText(descripcion);
             txtPrecio1.setText(precio);
