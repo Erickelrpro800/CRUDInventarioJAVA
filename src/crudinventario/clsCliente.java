@@ -63,7 +63,7 @@ public class clsCliente {
         String nuevaLinea = newNumero + "|" + newNombre + "|" + newTipo + "|" + newRazon;
         String lineaOriginal = this.numero + "|" + this.nombre + "|" + this.tipo + "|" + this.razon;
         
-        System.out.println("Nuevo valores:" + nuevaLinea);
+        System.out.println("Nuevos valores:" + nuevaLinea);
         System.out.println("Valores Originales:" + lineaOriginal);
         
         mCliente mClient = new mCliente();

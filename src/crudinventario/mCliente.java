@@ -4,10 +4,6 @@
  */
 package crudinventario;
 
-/**
- *
- * @author FAMILIA
- */
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -89,11 +85,11 @@ public class mCliente {
                 System.out.println("Registro Actualizado");
                 
             } else {
-                System.out.println("Error : No se pudo borrar el archivo");
+                System.out.println("Error: No se pudo borrar el archivo");
             }
         } else{
             fileTemporal.delete();
-            System.out.println("No se encontro el registro");
+            System.out.println("No se encontró el registro");
         }    
     }
     
@@ -127,7 +123,7 @@ public class mCliente {
                 System.out.println("Registro Eliminado");
                 
             } else {
-                System.out.println("Error : No se pudo borrar el archivo");
+                System.out.println("Error: No se pudo borrar el archivo");
             }
         } else{
             fileTemporal.delete();

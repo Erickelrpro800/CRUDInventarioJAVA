@@ -1,3 +1,2 @@
-69|Posicion|69.0
-67|Mal chiste|67.0
-100|cien| 100.0
+100|cien| 100
+10924|Lego Titanic| 16500
