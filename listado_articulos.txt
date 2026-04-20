@@ -1,2 +1,19 @@
 100|cien|100
 10924|Lego Titanic|16500
+2026|Celular|14000.0
+6969|Laptop|20000.0
+8246|Mac |10000.0
+3456|Audifonos|800.0
+1001|Lentes|500.0
+FER-004|Pinzas de Presion 10in|150.0
+FER-005|Desarmador Cruz 1/4x4|45.5
+ELE-003|Cable Calibre 12 AWG 100m|1200.0
+ELE-004|Foco LED 12W|30.0
+PLM-001|Cinta Teflon 1/2in|15.0
+PLM-002|Llave de Paso Cobre 3/4|85.0
+FER-004|Pinzas de Presion 10in|150.0
+FER-005|Desarmador Cruz 1/4x4|45.5
+ELE-003|Cable Calibre 12 AWG 100m|1200.0
+ELE-004|Foco LED 12W|30.0
+PLM-001|Cinta Teflon 1/2in|15.0
+PLM-002|Llave de Paso Cobre 3/4|85.0

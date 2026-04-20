@@ -1,4 +1,3 @@
 1|Erick|Chingon|depresion
-2|Gustavo|menso|flojo
+2|Gustavo|Hombre|flojo
 3|Chris|Ñoquis|compañero
-4|Carolina|Mujer|Compañera
