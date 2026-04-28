@@ -1,0 +1,97 @@
+[
+  {
+    "codigo": "100",
+    "descripcion": "cien",
+    "precio": 100.0
+  },
+  {
+    "codigo": "10924",
+    "descripcion": "Lego Titanic",
+    "precio": 16500.0
+  },
+  {
+    "codigo": "2026",
+    "descripcion": "Celular",
+    "precio": 14000.0
+  },
+  {
+    "codigo": "6969",
+    "descripcion": "Laptop",
+    "precio": 20000.0
+  },
+  {
+    "codigo": "8246",
+    "descripcion": "Mac ",
+    "precio": 10000.0
+  },
+  {
+    "codigo": "3456",
+    "descripcion": "Audifonos",
+    "precio": 800.0
+  },
+  {
+    "codigo": "1001",
+    "descripcion": "Lentes",
+    "precio": 500.0
+  },
+  {
+    "codigo": "FER-004",
+    "descripcion": "Pinzas de Presion 10in",
+    "precio": 150.0
+  },
+  {
+    "codigo": "FER-005",
+    "descripcion": "Desarmador Cruz 1/4x4",
+    "precio": 45.5
+  },
+  {
+    "codigo": "ELE-003",
+    "descripcion": "Cable Calibre 12 AWG 100m",
+    "precio": 1200.0
+  },
+  {
+    "codigo": "ELE-004",
+    "descripcion": "Foco LED 12W",
+    "precio": 30.0
+  },
+  {
+    "codigo": "PLM-001",
+    "descripcion": "Cinta Teflon 1/2in",
+    "precio": 15.0
+  },
+  {
+    "codigo": "PLM-002",
+    "descripcion": "Llave de Paso Cobre 3/4",
+    "precio": 85.0
+  },
+  {
+    "codigo": "FER-004",
+    "descripcion": "Pinzas de Presion 10in",
+    "precio": 150.0
+  },
+  {
+    "codigo": "FER-005",
+    "descripcion": "Desarmador Cruz 1/4x4",
+    "precio": 45.5
+  },
+  {
+    "codigo": "ELE-003",
+    "descripcion": "Cable Calibre 12 AWG 100m",
+    "precio": 1200.0
+  },
+  {
+    "codigo": "ELE-004",
+    "descripcion": "Foco LED 12W",
+    "precio": 30.0
+  },
+  {
+    "codigo": "PLM-001",
+    "descripcion": "Cinta Teflon 1/2in",
+    "precio": 15.0
+  },
+  {
+    "codigo": "PLM-002",
+    "descripcion": "Llave de Paso Cobre 3/4",
+    "precio": 85.0
+  }
+]
