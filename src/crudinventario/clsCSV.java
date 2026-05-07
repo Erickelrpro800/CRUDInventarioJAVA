@@ -17,6 +17,7 @@ import java.io.IOException;
 public class clsCSV {
     
     String archivo = "Inventario.csv";
+    String archivo2 = "clientes.csv";
     
     public void importarDatos(){
         try(BufferedReader br = new BufferedReader( new FileReader(archivo))){
@@ -37,4 +38,26 @@ public class clsCSV {
             System.out.println("Mensaje de error" + e.getMessage());
         }
     } 
+
+
+    public void importarClientes(){    
+        try(BufferedReader br = new BufferedReader(new FileReader(archivo2))){ 
+            
+            br.readLine(); 
+            
+            String linea;         
+            while ((linea = br.readLine()) != null){
+                String[] datos = linea.split(",");
+
+                clsCliente cCliente = new clsCliente(datos[0], datos[1],
+                        datos[2], datos[3]);
+                
+                cCliente.guardar();
+                }
+            br.close();
+            System.out.println("Se ha terminado la importacion.");    
+        }catch(IOException e){
+            System.out.println("Mensaje de error" + e.getMessage());
+        }
+    }
 }
